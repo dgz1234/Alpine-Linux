@@ -35,6 +35,3 @@ echo -e "${CYAN}📊 内存${NC}: $(get_mem_info)"
 echo -e "${CYAN}💾 磁盘${NC}: $(df -h / | awk 'NR==2 {print "已用='${GREEN}'"$3"'${NC}'/总容量='${YELLOW}'"$2"'${NC}' ("$5")"}')"
 echo -e "----------------------------------"
 EOF
-
-# 运行
-chmod +x /tmp/lxc-status.sh && /tmp/lxc-status.sh
